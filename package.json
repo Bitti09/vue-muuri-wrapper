@@ -1,12 +1,16 @@
 {
   "name": "vue-muuri-wrapper",
   "version": "0.1.0",
+  "main": "dist/VueMuuri.common.js",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build --target lib --name VueMuuri src/main.js"
   },
   "dependencies": {
+    "hammerjs": "^2.0.8",
+    "jquery": "^3.3.1",
+    "muuri": "^0.7.1",
     "vue": "^2.5.21"
   },
   "devDependencies": {
